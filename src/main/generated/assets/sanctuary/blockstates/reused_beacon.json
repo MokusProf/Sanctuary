@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sanctuary:block/reused_beacon"
+    }
+  }
+}

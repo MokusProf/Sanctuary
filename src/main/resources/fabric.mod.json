@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "sanctuary",
+  "version": "${version}",
+  "name": "Sanctuary",
+  "description": "Dawg what you are looking for?",
+  "authors": [
+    "_Mokus"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/sanctuary/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.mokus.sanctuary.datagen.SanctuaryDataGenerator"
+    ],
+    "client": [
+      "net.mokus.sanctuary.SanctuaryClient"
+    ],
+    "main": [
+      "net.mokus.sanctuary.Sanctuary"
+    ],
+    "cardinal-components": [
+      "net.mokus.sanctuary.cardinalComponents.SanctuaryCComponents"
+    ]
+  },
+  "mixins": [
+    "sanctuary.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "cardinal-components": [
+      "sanctuary:pirate_component",
+      "sanctuary:sanctuary_player"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "sanctuary:block/reforged_beacon_model",
+  "textures": {
+    "all": "sanctuary:block/reused_beacon"
+  }
+}

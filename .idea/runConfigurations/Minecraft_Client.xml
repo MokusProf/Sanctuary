@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="Minecraft Client" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="net.fabricmc.devlaunchinjector.Main" />
+    <module name="ate.main" />
+    <option name="PROGRAM_PARAMETERS" value="--username _Mokus --uuid c1115be4d7e84979b1bd1a6820c736da --accessToken eyJraWQiOiIwNDkxODEiLCJhbGciOiJSUzI1NiJ9.eyJ4dWlkIjoiMjUzNTQ2NTQ4MTEwOTg2NCIsImFnZyI6IkFkdWx0Iiwic3ViIjoiZGQ5MmU1YjAtZTExNy00NzkxLWEwN2QtMTdiMWM0MTc2ZjA4IiwiYXV0aCI6IlhCT1giLCJucyI6ImRlZmF1bHQiLCJyb2xlcyI6W10sImlzcyI6ImF1dGhlbnRpY2F0aW9uIiwiZmxhZ3MiOlsibXVsdGlwbGF5ZXIiXSwicHJvZmlsZXMiOnsibWMiOiJjMTExNWJlNC1kN2U4LTQ5NzktYjFiZC0xYTY4MjBjNzM2ZGEifSwicG1pZCI6IjQwN2RhMmExLWM1MjktNWYyMi04NDU1LTAyZGNiNzljMWRjMCIsInBsYXRmb3JtIjoiUENfTEFVTkNIRVIiLCJ0aWQiOiJFOTlCMCIsInBmZCI6W3sidHlwZSI6Im1jIiwiaWQiOiJjMTExNWJlNC1kN2U4LTQ5NzktYjFiZC0xYTY4MjBjNzM2ZGEiLCJuYW1lIjoiX01va3VzIn1dLCJ4aWQiOiIyNTM1NDY1NDgxMTA5ODY0IiwibmJmIjoxNzg4MDAxMjE2LCJleHAiOjE3ODgwODc2MTYsImlhdCI6MTc4ODAwMTIxNiwiYWlkIjoiYmRlMDM2ZmItNTQ4My00MmYzLTlhYmYtMjc1MDdiZjNmNTEwIn0.TYcK9psCPEv1Dc3Y1uMG15-UfwA06y9lKpRrp29PQf7QhRoopO991yXLk60BGWXJ_xz4Co3koEVTdWCm_xzmUwltoTM6IRT5i76PZpwsVB1kLU66YmjclniRMbVkgGQ6mKP93QGbVMPlozAyhwWPQ5TNsj_klt9IrYruFAG4GAD3HAh99Vr7qK12hwLM-a249RePyR5AfIuw1-qk03FDssEw6ZLsulBiZ97v8ji7lzhANFrN8tQ_13c5u9Omtlm85P55lpUxC6oyj2WzAL7U8vgSRM0yaidnQSsCJRN9rpPpCm8OYP61NuAYyh8dr73VAenW8zIsO8rKU5fPDCnKAA --userType msa" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="VM_PARAMETERS" value="-Dfabric.dli.config=C:\Users\Mokus\Documents\mods\ate\.gradle\loom-cache\launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run/" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="Minecraft.EnsureAccountBeforeRun" enabled="true" />
+    </method>
+  </configuration>
+</component>

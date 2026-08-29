@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import net.mokus.sanctuary.util.SanctuaryDamageSources;
+import net.mokus.sanctuary.util.SanctuaryMarkCheck;
 import org.ladysnake.cca.api.v3.component.Component;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
@@ -33,13 +34,15 @@ public class SanctuaryPlayerComponent implements Component, ServerTickingCompone
         if (isBannedFromPiratePlace){
             if (pirateComponent.isEntityInRegion(player)){
                 Level level = player.level();
-                DamageSource damageSource = new DamageSource(
-                        level.registryAccess()
-                                .lookupOrThrow(Registries.DAMAGE_TYPE)
-                                .get(SanctuaryDamageSources.SANCTUARY_DAMAGE.identifier()).get()
-                );
+                if (level.getGameTime() % 24 == 0){
+                    DamageSource damageSource = new DamageSource(
+                            level.registryAccess()
+                                    .lookupOrThrow(Registries.DAMAGE_TYPE)
+                                    .get(SanctuaryDamageSources.SANCTUARY_DAMAGE.identifier()).get()
+                    );
 
-                player.hurtServer((ServerLevel) level,damageSource, 1.0f);
+                    player.hurtServer((ServerLevel) level,damageSource, 1.0f);
+                }
                 player.addEffect(new MobEffectInstance(MobEffects.GLOWING,10,0,true,true));
             }
         }

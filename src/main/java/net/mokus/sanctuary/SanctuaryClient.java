@@ -51,6 +51,8 @@ public class SanctuaryClient implements ClientModInitializer {
         });
 
         BlockRenderLayerMap.putBlocks(ChunkSectionLayer.CUTOUT,
-                SanctuaryBlocks.REUSED_BEACON);
+                SanctuaryBlocks.REUSED_BEACON,
+                SanctuaryBlocks.GILDED_GLASS,
+                SanctuaryBlocks.GILDED_GLASS_PANE);
     }
 }

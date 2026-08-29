@@ -12,6 +12,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.mokus.sanctuary.cardinalComponents.SanctuaryCComponents;
 import net.mokus.sanctuary.sanctuary.SanctuaryRegion;
+import net.mokus.sanctuary.util.SanctuaryMarkCheck;
 import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -33,6 +34,7 @@ public interface SanctuaryCollisionMixin {
         List<VoxelShape> customShapes = new ArrayList<>();
 
         boolean bannedFromPiratePlace = SanctuaryCComponents.SANCTUARY_PLAYER.get(player).isBannedFromPiratePlace();
+
         if (bannedFromPiratePlace) {
             SanctuaryRegion pirateRegion = SanctuaryCComponents.PIRATE_COMPONENT.get(level).getRegion();
             VoxelShape pirateShape = sanctuary$RegionShape(pirateRegion, player, box);

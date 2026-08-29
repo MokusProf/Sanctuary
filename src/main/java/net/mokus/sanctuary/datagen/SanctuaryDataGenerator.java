@@ -12,5 +12,8 @@ public class SanctuaryDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(SanctuaryLangProvider::new);
         pack.addProvider(SanctuaryModelProvider::new);
         pack.addProvider(SanctuaryDamageTagProvider::new);
+        pack.addProvider(SanctuaryRecipeProvider::new);
+        pack.addProvider(SanctuaryLootTableProvider::new);
+        pack.addProvider(SanctuaryTagProvider::new);
     }
 }

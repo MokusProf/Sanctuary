@@ -25,6 +25,8 @@ public class SanctuaryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
+        blockStateModelGenerator.createTrivialCube(SanctuaryBlocks.GILDED_OBSIDIAN);
+        blockStateModelGenerator.createGlassBlocks(SanctuaryBlocks.GILDED_GLASS,SanctuaryBlocks.GILDED_GLASS_PANE);
         blockStateModelGenerator.createTrivialBlock(SanctuaryBlocks.REUSED_BEACON, TexturedModel.createDefault(TextureMapping::cube,REFORGED_BEACON));
     }
 

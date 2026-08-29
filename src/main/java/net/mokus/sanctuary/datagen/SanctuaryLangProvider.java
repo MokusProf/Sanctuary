@@ -15,7 +15,10 @@ public class SanctuaryLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
 
-        translationBuilder.add(SanctuaryBlocks.REUSED_BEACON.asItem(),"Reused Beacon");
+        translationBuilder.add(SanctuaryBlocks.REUSED_BEACON.asItem(),"Runic Beacon");
+        translationBuilder.add(SanctuaryBlocks.GILDED_GLASS.asItem(),"Gilded Glass");
+        translationBuilder.add(SanctuaryBlocks.GILDED_GLASS_PANE.asItem(),"Gilded Glass Pane");
+        translationBuilder.add(SanctuaryBlocks.GILDED_OBSIDIAN.asItem(),"Gilded Obsidian");
 
     }
 }

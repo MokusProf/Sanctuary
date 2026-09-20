@@ -1,6 +1,5 @@
 package net.mokus.sanctuary.util;
 
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 
 import java.util.UUID;

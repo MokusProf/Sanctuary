@@ -12,7 +12,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.mokus.sanctuary.cardinalComponents.SanctuaryCComponents;
 import net.mokus.sanctuary.sanctuary.SanctuaryRegion;
-import net.mokus.sanctuary.util.SanctuaryMarkCheck;
 import org.jspecify.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;

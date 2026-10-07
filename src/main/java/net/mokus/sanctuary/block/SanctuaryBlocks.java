@@ -26,6 +26,10 @@ public class SanctuaryBlocks {
             PirateBeaconBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BEACON).strength(-1.0F, 3600000.0F)
                     .lightLevel(blockStatex -> 0),true,null);
 
+    public static final Block MODIFIED_BEACON = registerBlock("modified_beacon",
+            ModifiedBeaconBlock::new, BlockBehaviour.Properties.ofFullCopy(Blocks.BEACON).strength(-1.0F, 3600000.0F)
+                    .lightLevel(blockStatex -> 0),true,null);
+
     public static final Block GILDED_OBSIDIAN = registerBlock("gilded_obsidian",
             Block::new, BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN),true, CreativeModeTabs.BUILDING_BLOCKS);
 

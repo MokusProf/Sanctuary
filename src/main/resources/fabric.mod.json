@@ -3,9 +3,10 @@
   "id": "sanctuary",
   "version": "${version}",
   "name": "Sanctuary",
-  "description": "Dawg what you are looking for?",
+  "description": "We got kills to farm",
   "authors": [
-    "_Mokus"
+    "_Mokus",
+    "vred"
   ],
   "contact": {},
   "license": "All-Rights-Reserved",
@@ -36,7 +37,9 @@
   "custom": {
     "cardinal-components": [
       "sanctuary:pirate_component",
-      "sanctuary:sanctuary_player"
+      "sanctuary:sanctuary_player",
+      "sanctuary:prison",
+      "sanctuary:killstreak"
     ]
   }
 }

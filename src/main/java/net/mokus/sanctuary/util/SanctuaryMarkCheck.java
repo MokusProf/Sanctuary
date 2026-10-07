@@ -1,6 +1,11 @@
 package net.mokus.sanctuary.util;
 
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.mokus.sanctuary.item.data.OwnerData;
+import net.mokus.sanctuary.item.SanctuaryItems;
 
 import java.util.UUID;
 
@@ -12,5 +17,26 @@ public class SanctuaryMarkCheck {
 
     public static boolean isPirateUUID(Player player){
         return player.getUUID().equals(MOKUS) || player.getUUID().equals(ASHER) || player.getUUID().equals(PICKLE) || player.getUUID().equals(DEMENTIA);
+    }
+
+    public static boolean hasMark(Entity entity) {
+        if (!(entity instanceof Player player)) return false;
+        if (player.getUUID().equals(MOKUS)) return true;
+        return checkOwnedEmblem(player, player.getUUID());
+    }
+
+
+    public static boolean checkOwnedEmblem(Player player, UUID requiredUuid) {
+        Inventory inventory = player.getInventory();
+        for (int i = 0; i < inventory.getContainerSize(); i++) {
+            ItemStack stack = inventory.getItem(i);
+            if (stack.is(SanctuaryItems.EMBLEM)) {
+                OwnerData data = stack.get(SanctuaryDataComponents.EMBLEM_OWNER);
+                if (data != null && data.uuid().equals(requiredUuid)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

@@ -22,6 +22,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.ArrayList;
 import java.util.List;
 
+import static net.mokus.sanctuary.util.SanctuaryMarkCheck.hasMark;
+
 @Mixin(value = CollisionGetter.class)
 public interface SanctuaryCollisionMixin {
 
@@ -32,8 +34,16 @@ public interface SanctuaryCollisionMixin {
 
         List<VoxelShape> customShapes = new ArrayList<>();
 
-        boolean bannedFromPiratePlace = SanctuaryCComponents.SANCTUARY_PLAYER.get(player).isBannedFromPiratePlace();
+        if (!hasMark(player)) {
+            SanctuaryRegion sanctuaryRegion = SanctuaryCComponents.PRISON.get(level).getRegion();
+            VoxelShape sanctuaryShape = sanctuary$RegionShape(sanctuaryRegion, player, box);
+            if (sanctuaryShape != null) {
+                customShapes.add(sanctuaryShape);
+            }
+        }
 
+
+        boolean bannedFromPiratePlace = SanctuaryCComponents.SANCTUARY_PLAYER.get(player).isBannedFromPiratePlace();
         if (bannedFromPiratePlace) {
             SanctuaryRegion pirateRegion = SanctuaryCComponents.PIRATE_COMPONENT.get(level).getRegion();
             VoxelShape pirateShape = sanctuary$RegionShape(pirateRegion, player, box);

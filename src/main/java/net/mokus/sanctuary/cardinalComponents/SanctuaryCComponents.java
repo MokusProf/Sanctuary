@@ -12,6 +12,12 @@ import org.ladysnake.cca.api.v3.world.WorldComponentInitializer;
 
 public class SanctuaryCComponents implements EntityComponentInitializer, WorldComponentInitializer {
 
+    public static final ComponentKey<PrisonComponent> PRISON =
+            ComponentRegistry.getOrCreate(
+                    Identifier.fromNamespaceAndPath(Sanctuary.MOD_ID, "prison"),
+                    PrisonComponent.class
+            );
+
     public static final ComponentKey<PirateComponent> PIRATE_COMPONENT =
             ComponentRegistry.getOrCreate(
                     Identifier.fromNamespaceAndPath(Sanctuary.MOD_ID, "pirate_component"),
@@ -24,13 +30,21 @@ public class SanctuaryCComponents implements EntityComponentInitializer, WorldCo
                     SanctuaryPlayerComponent.class
             );
 
+    public static final ComponentKey<KillstreakComponent> KILLSTREAK =
+            ComponentRegistry.getOrCreate(
+                    Identifier.fromNamespaceAndPath(Sanctuary.MOD_ID, "killstreak"),
+                    KillstreakComponent.class
+            );
+
     @Override
     public void registerEntityComponentFactories(EntityComponentFactoryRegistry registry) {
         registry.registerForPlayers(SANCTUARY_PLAYER,SanctuaryPlayerComponent::new, RespawnCopyStrategy.ALWAYS_COPY);
+        registry.registerForPlayers(KILLSTREAK,KillstreakComponent::new, RespawnCopyStrategy.NEVER_COPY);
     }
 
     @Override
     public void registerWorldComponentFactories(WorldComponentFactoryRegistry registry) {
         registry.register(PIRATE_COMPONENT,PirateComponent::new);
+        registry.register(PRISON,PrisonComponent::new);
     }
 }

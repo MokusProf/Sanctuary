@@ -1,6 +1,12 @@
 {
+  "death.attack.sanctuary_damage": "%s was absorbed by the Sanctuary",
+  "item.sanctuary.emblem": "Emblem",
   "item.sanctuary.gilded_glass": "Gilded Glass",
   "item.sanctuary.gilded_glass_pane": "Gilded Glass Pane",
   "item.sanctuary.gilded_obsidian": "Gilded Obsidian",
-  "item.sanctuary.reused_beacon": "Runic Beacon"
+  "item.sanctuary.killstreak_kit": "Killstreak Kit",
+  "item.sanctuary.modified_beacon": "Modified Beacon",
+  "item.sanctuary.reused_beacon": "Runic Beacon",
+  "item.sanctuary.ritual_sword": "Ritual Sword",
+  "item.sanctuary.strangifier": "Strangifier"
 }

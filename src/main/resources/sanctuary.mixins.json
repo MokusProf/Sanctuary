@@ -4,9 +4,13 @@
   "package": "net.mokus.sanctuary.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "DamageSourceMixin",
+    "ItemStackMixin",
     "SanctuaryCollisionMixin"
   ],
   "client": [
+    "RitualSwordAnimMixin",
+    "ScreenShakeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

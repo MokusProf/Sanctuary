@@ -4,7 +4,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.item.ItemStack;
-import net.mokus.sanctuary.item.strange.StrangeData;
+import net.mokus.sanctuary.item.data.StrangeData;
 import net.mokus.sanctuary.item.strange.StrangeRank;
 import net.mokus.sanctuary.util.SanctuaryDataComponents;
 import org.spongepowered.asm.mixin.Mixin;

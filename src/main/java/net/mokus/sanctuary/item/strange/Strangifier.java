@@ -6,6 +6,7 @@ import net.minecraft.world.inventory.ClickAction;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.mokus.sanctuary.item.data.StrangeData;
 import net.mokus.sanctuary.util.SanctuaryDataComponents;
 
 public class Strangifier extends Item {

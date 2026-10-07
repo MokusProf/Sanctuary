@@ -1,10 +1,11 @@
-package net.mokus.sanctuary.item.strange;
+package net.mokus.sanctuary.item.data;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
+import net.mokus.sanctuary.item.strange.StrangeRank;
 
 public record StrangeData(String name, int killCount, int blocksMined, float damageAbsorbed) {
     public static final Codec<StrangeData> CODEC = RecordCodecBuilder.create(inst -> inst.group(

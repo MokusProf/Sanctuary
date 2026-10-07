@@ -8,7 +8,7 @@ import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.resources.Identifier;
 import net.mokus.sanctuary.Sanctuary;
 import net.mokus.sanctuary.item.data.OwnerData;
-import net.mokus.sanctuary.item.strange.StrangeData;
+import net.mokus.sanctuary.item.data.StrangeData;
 
 
 public class SanctuaryDataComponents {

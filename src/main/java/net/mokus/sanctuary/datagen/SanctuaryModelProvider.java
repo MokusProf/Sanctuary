@@ -79,7 +79,7 @@ public class SanctuaryModelProvider extends FabricModelProvider {
                 ItemModelUtils.plainModel(itemModelGenerator.createFlatItemModel(SanctuaryItems.EMBLEM, "_not_signed", ModelTemplates.FLAT_ITEM))
         );
 
-        this.generateSwordItem(SanctuaryItems.RITUAl_SWORD,itemModelGenerator);
+        this.generateSwordItem(SanctuaryItems.RITUAL_SWORD,itemModelGenerator);
         itemModelGenerator.generateFlatItem(SanctuaryItems.KILLSTREAK_KIT,ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(SanctuaryItems.STRANGIFIER,ModelTemplates.FLAT_ITEM);
     }

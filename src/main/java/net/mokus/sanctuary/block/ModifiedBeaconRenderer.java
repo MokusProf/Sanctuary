@@ -70,7 +70,7 @@ public class ModifiedBeaconRenderer implements BlockEntityRenderer<ModifiedBeaco
         state.plantYaw = blockEntity.getPlantYaw();
         state.plunge = cords(blockEntity.getElapsedTicksSincePlaced(tickProgress), state.plantYaw);
 
-        ItemStack sword = SanctuaryItems.RITUAl_SWORD.asItem().getDefaultInstance();
+        ItemStack sword = SanctuaryItems.RITUAL_SWORD.asItem().getDefaultInstance();
         this.itemModelResolver.updateForTopItem(
                 state.swordRenderState,
                 sword,

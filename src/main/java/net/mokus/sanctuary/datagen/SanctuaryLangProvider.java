@@ -22,7 +22,7 @@ public class SanctuaryLangProvider extends FabricLanguageProvider {
         translationBuilder.add(SanctuaryBlocks.GILDED_OBSIDIAN.asItem(),"Gilded Obsidian");
 
         translationBuilder.add(SanctuaryItems.EMBLEM,"Emblem");
-        translationBuilder.add(SanctuaryItems.RITUAl_SWORD,"Ritual Sword");
+        translationBuilder.add(SanctuaryItems.RITUAL_SWORD,"Ritual Sword");
         translationBuilder.add(SanctuaryBlocks.MODIFIED_BEACON.asItem(),"Modified Beacon");
 
         translationBuilder.add(SanctuaryItems.STRANGIFIER,"Strangifier");

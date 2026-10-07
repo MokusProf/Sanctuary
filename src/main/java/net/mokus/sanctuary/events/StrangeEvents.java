@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.mokus.sanctuary.cardinalComponents.KillstreakComponent;
 import net.mokus.sanctuary.cardinalComponents.SanctuaryCComponents;
-import net.mokus.sanctuary.item.strange.StrangeData;
+import net.mokus.sanctuary.item.data.StrangeData;
 import net.mokus.sanctuary.item.strange.StrangeType;
 import net.mokus.sanctuary.util.SanctuaryDataComponents;
 

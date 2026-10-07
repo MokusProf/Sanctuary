@@ -6,8 +6,6 @@ import net.minecraft.world.inventory.ClickAction;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.mokus.sanctuary.item.strange.StrangeData;
-import net.mokus.sanctuary.item.strange.Strangifier;
 import net.mokus.sanctuary.util.SanctuaryDataComponents;
 
 public class KillstreakKit extends Item {

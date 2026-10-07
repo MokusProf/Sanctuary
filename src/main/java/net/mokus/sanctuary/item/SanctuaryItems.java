@@ -24,7 +24,7 @@ public class SanctuaryItems {
 //            .title(Component.translatable("buildGroup.sanctuary_items"))
 //            .build();
 
-    public static final Item RITUAl_SWORD = registerItem("ritual_sword",
+    public static final Item RITUAL_SWORD = registerItem("ritual_sword",
             settings -> new RitualSwordItem(settings.fireResistant().sword(ToolMaterial.DIAMOND, 4, -2.7F)), null);
 
     public static final Item EMBLEM = registerItem("emblem",
